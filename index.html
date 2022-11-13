@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="upper-container">
+    <div id="main-weather-container">
+        <div id="location">Regensburg</div>
+        <div id="weather-info">Cloudy</div>
+        <div id="main-temperature">20°</div>
+        <button id="change-unit">Change to °F</button>
+        <form id="location-form">
+            <input type="text" id="location-input" placeholder="Search for your location">
+        </form>
+    </div>
+    <div id="secondary-weather-container">
+        <div id="feels-like">Feels like:</div>
+        <div id="temp-max">Max</div>
+        <div id="temp-min">Min</div>
+        <div id="humidity">Humidity</div>
+        <div id="wind-speed">Wind Speed</div>
+    </div>
+    </div>
+    <h2>5-Day Forecast</h2>
+    <div id="lower-container">
+        <div id="day-one" class="forecast-container">
+            <div id="day-one-day"></div>
+            <div id="day-one-temperature"></div>
+            <div id="day-one-min-temp"></div>
+            <div id="day-one-icon"></div>
+        </div>
+        <div id="day-two" class="forecast-container">
+            <div id="day-two-day"></div>
+            <div id="day-two-temperature"></div>
+            <div id="day-two-min-temp"></div>
+            <div id="day-two-icon"></div>
+        </div>
+        <div id="day-three" class="forecast-container">
+            <div id="day-three-day"></div>
+            <div id="day-three-temperature"></div>
+            <div id="day-three-min-temp"></div>
+            <div id="day-three-icon"></div>
+        </div>
+        <div id="day-four" class="forecast-container">
+            <div id="day-four-day"></div>
+            <div id="day-four-temperature"></div>
+            <div id="day-four-min-temp"></div>
+            <div id="day-four-icon"></div>
+        </div>
+        <div id="day-five" class="forecast-container">
+            <div id="day-five-day"></div>
+            <div id="day-five-temperature"></div>
+            <div id="day-five-min-temp"></div>
+            <div id="day-five-icon"></div>
+        </div>
+    </div>
+</body>
+</html>
