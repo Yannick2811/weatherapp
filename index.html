@@ -6,25 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Weather App</title>
 </head>
 <body>
     <div id="upper-container">
     <div id="main-weather-container">
-        <div id="location">Regensburg</div>
-        <div id="weather-info">Cloudy</div>
-        <div id="main-temperature">20°</div>
+        <div id="location"></div>
+        <div id="weather-info"></div>
+        <div id="weather-icon"></div>
+        <div id="main-temperature"></div>
         <button id="change-unit">Change to °F</button>
         <form id="location-form">
             <input type="text" id="location-input" placeholder="Search for your location">
+            <ion-icon id="search-icon" name="search-outline"></ion-icon>
         </form>
     </div>
     <div id="secondary-weather-container">
-        <div id="feels-like">Feels like:</div>
-        <div id="temp-max">Max</div>
-        <div id="temp-min">Min</div>
-        <div id="humidity">Humidity</div>
-        <div id="wind-speed">Wind Speed</div>
+        <div id="feels-like">Feels like:
+            <p id="feels-like-para"></p>
+        </div>
+        <div id="temp-max">Max:
+            <p id="temp-max-para"></p>
+        </div>
+        <div id="temp-min">Min:
+            <p id="temp-min-para"></p>
+        </div>
+        <div id="wind-speed">Wind Speed:
+            <p id="wind-speed-para"></p>
+        </div>
     </div>
     </div>
     <h2>5-Day Forecast</h2>
@@ -33,32 +44,39 @@
             <div id="day-one-day"></div>
             <div id="day-one-temperature"></div>
             <div id="day-one-min-temp"></div>
-            <div id="day-one-icon"></div>
+            <div class="weather-icon" id="day-one-icon"><img src="icons/unknown.png" /></div>
         </div>
         <div id="day-two" class="forecast-container">
             <div id="day-two-day"></div>
             <div id="day-two-temperature"></div>
             <div id="day-two-min-temp"></div>
-            <div id="day-two-icon"></div>
+            <div class="weather-icon" id="day-two-icon"><img src="icons/unknown.png" /></div>
+
         </div>
         <div id="day-three" class="forecast-container">
             <div id="day-three-day"></div>
             <div id="day-three-temperature"></div>
             <div id="day-three-min-temp"></div>
-            <div id="day-three-icon"></div>
+            <div class="weather-icon" id="day-three-icon"><img src="icons/unknown.png" /></div>
+            
         </div>
         <div id="day-four" class="forecast-container">
             <div id="day-four-day"></div>
             <div id="day-four-temperature"></div>
             <div id="day-four-min-temp"></div>
-            <div id="day-four-icon"></div>
+            <div class="weather-icon" id="day-four-icon"><img src="icons/unknown.png" /></div>
+            
         </div>
         <div id="day-five" class="forecast-container">
             <div id="day-five-day"></div>
             <div id="day-five-temperature"></div>
             <div id="day-five-min-temp"></div>
-            <div id="day-five-icon"></div>
+            <div class="weather-icon" id="day-five-icon"><img src="icons/unknown.png" /></div>
+            
         </div>
     </div>
+    <footer>
+        Yannick Fürsich for Odin Project 2022
+    </footer>
 </body>
 </html>

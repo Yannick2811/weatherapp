@@ -5,10 +5,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-image: url("images/1261646.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/1261646.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 #main-weather-container {
@@ -20,6 +22,7 @@ body {
   padding: 0.7em 0 0 1em;
   font-size: 2.5em;
   color: white;
+  margin-left: 1.5em;
 }
 
 #change-unit {
@@ -41,6 +44,25 @@ body {
   border-radius: 100px;
   height: 2em;
   padding: 0.3em 0.3em 0.3em 1em;
+  position: relative;
+}
+
+#search-icon {
+  position: absolute;
+  left: 10em;
+  top: 14.6em;
+  font-size: 28px;
+}
+
+#weather-icon {
+  padding: 0;
+  margin: 0;
+}
+
+#weather-icon img {
+  padding: 0;
+  height: 2.7em;
+  margin: 0;
 }
 
 #weather-info::first-letter {
@@ -65,6 +87,7 @@ body {
   padding: 0.7em 1em 0 0em;
   font-size: 2.5em;
   color: white;
+  margin-right: 1.5em;
 }
 
 #lower-container {
@@ -95,4 +118,89 @@ h2 {
   text-align: center;
   color: white;
   margin-top: 2em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  bottom: 0;
+}
+
+#weather-info {
+  font-size: 0.7em;
+}
+
+#main-temperature {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#location {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#feels-like {
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+  align-items: center;
+  font-size: 0.3em;
+}
+
+#temp-max {
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+  align-items: center;
+
+  font-size: 0.3em;
+}
+
+#temp-min {
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+  align-items: center;
+
+  font-size: 0.3em;
+}
+
+#humidity {
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+  align-items: center;
+
+  font-size: 0.3em;
+}
+
+#wind-speed {
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+  align-items: center;
+
+  font-size: 0.3em;
+}
+
+#feels-like-para,
+#temp-max-para,
+#temp-min-para,
+#wind-speed-para {
+  font-size: 2em;
+  margin: 0;
+}
+
+#day-one-day,
+#day-two-day,
+#day-three-day,
+#day-four-day,
+#day-five-day {
+  font-size: 1.4em;
+  font-weight: bold;
 }
